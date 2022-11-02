@@ -64,7 +64,7 @@ The nodemon package - Simplifies your development environment by automatically r
   
   ## Link 
   
-  Link to deployed application:
+  Link to deployed application: https://sub-atomic-mern.herokuapp.com/
   
   ## Screenshot
   
