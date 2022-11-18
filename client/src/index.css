@@ -32,8 +32,8 @@ body {
   line-height: 1.5;
   font-size: 20px;
   /* color: var(--dark); */
-  background-color: #61dafb;
-  background-image: linear-gradient(135deg, hsl(204, 72%, 74%, 0.5) 0%, hsl(237, 57%, 74%, 0.65) 100%);
+  /* background-color: #61dafb; */
+  background-image: linear-gradient(135deg, hsl(204, 72%, 74%, 0.5) 0%, hsl(237, 57%, 74%, 0.65) 100%) !important;
 
   /* React logo blue
   background-color: hsl(193, 95%, 68%, 0.5) !important; */
@@ -89,6 +89,7 @@ h6 {
 p {
   font-size: 1rem;
   margin-top: 0;
+  color: black !important;
 }
 
 a {
@@ -96,9 +97,7 @@ a {
   color: black !important;
 }
 
-a:visited {
-  color: inherit !important;
-}
+
 
 h3 {
   text-align: center;
@@ -130,7 +129,7 @@ nav {
 }
 
 nav a {
-  padding: 6px 10px;
+  padding: 5px;
   margin: 0 15px;
   /* transition: all 0.2s; */
   text-decoration: none;
@@ -154,12 +153,19 @@ nav a:focus {
   font-weight: 100 !important;
   font-size: 14px !important;
   margin-top: -5px;
-  margin-bottom: 1px;
+  color: white !important;
+  margin-bottom: 0px !important;
 }
+
+
+
+
+
 
 
 .github-icon {
   font-size: xx-large;
+  color: white !important;
 }
 
 .github-icon:hover {
@@ -177,6 +183,12 @@ nav a:focus {
 
 .nav-bar-links {
   font-size: 19px !important;
+  color: white !important;
+}
+
+.user-about {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
 
 .page-title {
@@ -202,6 +214,10 @@ nav a:focus {
 
 }
 
+.main-logo {
+  color: white !important;
+}
+
 .btn-inline {
   display: inline;
 }
@@ -218,18 +234,16 @@ nav a:focus {
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
   border-radius: var(--border-radius);
-  background-color: var(--light);
+  background-color: white !important;
   color: var(--dark);
   /* max-width: 1000px; */
   border: none !important;
-  box-shadow: 5px 5px 4px -4px rgba(0,0,0,0.48);
-  -webkit-box-shadow: 5px 5px 4px -4px rgba(0,0,0,0.48);
-  -moz-box-shadow: 5px 5px 4px -4px rgba(0,0,0,0.48);
+  box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.48);
 
 }
-
 
 .welcome {
   position: relative;
@@ -270,10 +284,10 @@ nav a:focus {
 }
 
 
-
 .card-body {
   padding: 1.5% !important;
   font-size: 1.5rem;
+  background-color: white !important;
 }
 
 .job-description {
@@ -410,7 +424,7 @@ input {
 
 /* LAYOUT */
 .container {
-  width: 85%;
+  width: 90% !important;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1083,17 +1097,17 @@ input {
     text-align: center;
   }
 
+  /* nav a {
+    margin: 5px !important
+  } */
 
   .list-heading {
     text-align: center;
   }
 
-  .sub-title {
-    margin-bottom: 8px;
-  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 992px) {
 
   /* .card-header {
     font-size: 16px !important;
@@ -1103,12 +1117,22 @@ input {
     width: 400px !important;
   }
 
-  .job-list-header, .single-job-header {
+  .job-list-header,
+  .single-job-header {
     font-size: 16px !important;
   }
 
+  header {
+    text-align: center;
+    padding-bottom: 7px !important;
+    padding-top: 7px !important;
+  }
 
+  .profile-card {
+    width: 85% !important;
+  }
 }
+
 
 
 /* col-sm */
@@ -1119,9 +1143,11 @@ input {
   }
 
 
-
   header {
     text-align: center;
+    padding-bottom: 7px !important;
+    padding-top: 7px !important;
+
   }
 
 
@@ -1221,9 +1247,12 @@ input {
 
   header {
     text-align: center;
+    padding-bottom: 7px !important;
+    padding-top: 7px !important;
+
   }
 
-  
+
 
   .col-md-1 {
     flex: 0 0 calc(100% * 1 / 12 - 0.5%);
@@ -1320,6 +1349,9 @@ input {
 
   header {
     text-align: left;
+    height: 80px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
   }
 
   .list-heading {
@@ -1431,11 +1463,12 @@ input {
 
 
 .footer-text {
+  font-size: 16px !important;
   display: flex !important;
   justify-content: center;
   align-items: center !important;
   color: rgba(255, 255, 255, 0.559);
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  /* background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
   -webkit-background-size: 125px 100%;
@@ -1455,7 +1488,7 @@ input {
   animation-iteration-count: infinite;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #222;
+  background-color: #222; */
 }
 
 @-moz-keyframes shimmer {
@@ -1506,6 +1539,10 @@ input {
     flex: 0 0 calc(100% * 1 / 12 - 0.5%);
   }
 
+
+  header {
+    padding-bottom: 0px !important;
+  }
 
   .col-xl-2 {
     flex: 0 0 calc(100% * 2 / 12 - 0.5%);

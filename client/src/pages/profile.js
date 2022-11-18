@@ -36,7 +36,7 @@ const Profile = (props) => {
   }
 
   return (
-    <div className="ml-auto m-auto w-60">
+    <div className="ml-auto m-auto w-60 profile-card">
       <div className="card">
         <div className="ml-auto mr-auto">{/* <ImageUpload/> */}</div>
         {Auth.loggedIn() && hasDegree && (
@@ -58,7 +58,7 @@ const Profile = (props) => {
           </div>
         )}
         <div className="flex-row mb-0 ml-auto mr-auto">
-          <p className="text-dark">{user.about}</p>
+          <p className="text-dark text-center ml-2 mr-2 user-about">{user.about}</p>
        
         </div>
         <div className="flex-column ml-3">

@@ -80,6 +80,7 @@ const SingleJob = () => {
         <div className="card-body">
           <p>
           <p className="text-dark job-description">{job.description}</p>
+            <hr></hr>
             <b>Date(s): </b>
             {job.dates}
             <br />

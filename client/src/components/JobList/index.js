@@ -26,6 +26,7 @@ const JobList = ({ jobs, title}) => {
             <div className="card-body text-center">
               <Link to={`/job/${job._id}`}>
               <p className='text-dark job-description'>{job.description}</p>
+              <hr></hr>
                 <p><b>Date(s): </b>{job.dates}<br /><b>School: </b> {job.school}<br />{job.grade} grade | {job.subject}</p>
               </Link>
             </div>

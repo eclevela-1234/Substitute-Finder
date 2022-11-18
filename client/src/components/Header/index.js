@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-dark mb-4 py-2 flex-row align-center text-white">
+    <header className="bg-dark mb-4 flex-row align-center text-white">
       <div className="container flex-row justify-space-between-lg justify-center align-center main-logo">
         <Link className="main-logo" to="/">
           <Animated
@@ -25,7 +25,7 @@ const Header = () => {
             isVisible={true}
           >
             {/* <h1 className='mb-1 mt-1 main-logo'>Sub At<span className='icon'><FaReact/></span>mic</h1> */}
-            <h1 className="mb-1 mt-1 main-logo">
+            <h1 className="mb-1 mt-0 main-logo">
               Sub At
               <span>
                 {" "}
